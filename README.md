@@ -1,4 +1,4 @@
-![N|Solid](https://rs.school/images/rs_school.svg =195x70)](https://rs.school)
+![N|Solid](https://rs.school/images/rs_school.svg)](https://rs.school)
 ## RS-School NodeJS course 2021-Q2
 
 More info [here](https://rs.school/nodejs/).
