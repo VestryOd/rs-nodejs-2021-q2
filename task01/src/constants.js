@@ -10,7 +10,16 @@ const filesErrors = {
   output: 'Please, input correct path to existing output file or give to the file relevant permissions',
 };
 
+const alphabet = {
+  maxUppercase: 122,
+  minUppercase: 97,
+  maxLowercase: 91,
+  minLowercase: 65,
+  length: 26,
+};
+
 module.exports = {
   paramsErrors,
   filesErrors,
+  alphabet,
 };
