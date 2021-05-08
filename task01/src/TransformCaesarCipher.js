@@ -26,13 +26,15 @@ class TransformCaesarCipher extends Transform {
         ? this.shift % alphabet.length
         : this.shift;
       const rest = code + (calculatedShift * this._sign);
+      let encoded = '';
       if (this._sign > 0 && rest > max) {
-        return min + (rest - max)
+        encoded = min + (rest - max)
       } else if (this._sign < 0 && rest < min){
-        return max - (min - rest);
+        encoded = max - (min - rest);
       } else {
-        return rest;
+        encoded = rest;
       }
+      return String.fromCharCode(encoded);
   }
 
   checkChar(char) {
